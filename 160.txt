@@ -1,0 +1,7 @@
+inovadora
+inoino
+
+su postgres
+postgres
+createdb nome -U postgres 
+psql nome -U postgres
