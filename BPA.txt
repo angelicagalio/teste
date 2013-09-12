@@ -1,0 +1,14 @@
+select b2.procedimento, p.pa_doc, b2.orig, b2.cnes, b2.cnsmed, b2.cbo from ibpa b2 
+inner join procsia p on p.codigo = b2.procedimento 
+where b2.numero=340 and b2.orig='I' 
+group by b2.procedimento, p.pa_doc, b2.orig, b2.cnes, b2.cnsmed, b2.cbo order by b2.cnes, b2.cnsmed, b2.cbo
+
+select id_procsianv, * from procsia where id_procsianv = '0303030038'
+
+
+select * from ibpa b2 
+where b2.numero=340 and b2.cbo = '223208'
+order by b2.cnes, b2.cnsmed, b2.cbo
+
+update ibpa set cbo = '223293'
+where numero=340 and cbo = '223208'
