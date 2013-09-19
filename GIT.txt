@@ -1,0 +1,56 @@
+Primeiramente, é necessário ter o GIT instalado.
+
+Para clonar o repositório, basta usar:
+
+git clone https://inovadora_suporte@bitbucket.org/gmusgmasgcis/gemus.git
+git clone https://inovadora_suporte@bitbucket.org/gmusgmasgcis/webgemus.git
+git clone https://inovadora_suporte@bitbucket.org/gmusgmasgcis/biometria.git
+git clone https://inovadora_suporte@bitbucket.org/gmusgmasgcis/mordomo.git
+
+
+
+Em distribuições linux baseadas em Debian, use:
+
+sudo apt-get install git
+
+Com OpenSUSE, use:
+
+sudo zypper install git
+
+Para Fedora, use:
+
+yum install git (como root)
+
+
+
+Para instalar o G-MUS pelo git, é necessário que não exista uma pasta chamada webgemus ou gemus no local onde deseja-se instalar.
+(o sistema sempre irá gerar a pasta webgemus/gemus completa).
+
+
+Uma vez instalado pelo GIT, podemos usar o próprio GIT para trocar a versão. 
+Se desejar simplesmente atualizar para a última versão disponível, entre no diretório webgemus (cd webgemus), e digite:
+
+git pull
+
+Caso tenha problema, e queira retornar a uma versão anterior, pode ver a lista de versões disponíveis com o comando
+
+git tag -l
+
+E para voltar até a versão desejada:
+
+git checkout <nome da versão>
+
+
+Todos os comandos, pode-se usar a opção "-f" para forçar uma execução. Em vários casos é útil.
+
+
+Nós do suporte usaremos o seguinte usuário e senha:
+
+U: inovadora_suporte
+
+S: i9gms2012
+
+Para  conhecer mais do gerenciador, visite: 
+
+https://bitbucket.org/
+
